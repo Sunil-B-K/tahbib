@@ -10,19 +10,20 @@ window.addEventListener("load", function () {
     setTimeout(function () {
       preload.style.display = "none";
       audio.pause();
+      console.log(audio);
     }, 5000);
   }, 5000); // Show the logo for 5 seconds
 });
 const audio2 = document.getElementById("myAudio");
 
 function playAudio() {
-    audio2.play();
-    document.getElementById("playBtn").style.display = "none";
-    document.getElementById("pauseBtn").style.display = "block";
+  audio2.play();
+  document.getElementById("playBtn").style.display = "none";
+  document.getElementById("pauseBtn").style.display = "block";
 }
 
 function pauseAudio() {
-    audio2.pause();
-    document.getElementById("playBtn").style.display = "block";
-    document.getElementById("pauseBtn").style.display = "none";
+  audio2.pause();
+  document.getElementById("playBtn").style.display = "block";
+  document.getElementById("pauseBtn").style.display = "none";
 }
